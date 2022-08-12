@@ -1,0 +1,589 @@
+@import "_footer";
+@import "_fuente";
+@import "_mapas.scss";
+@import "_mixin.scss";
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: "poppins";
+}
+
+.section-main {
+  background-image: url(../img/fon-contact.jpg);
+  background-size: cover;
+  background-position: right 0px top;
+  padding: 4% 0;
+  margin-bottom: 50px;
+}
+
+/* ----HEADER---- */
+
+header {
+  position: fixed;
+
+  nav {
+    background-color: rgba(255, 255, 255, 0.593);
+    color: #280400;
+    width: 100vw;
+    height: 50px;
+  }
+
+  p {
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+  }
+
+  ul {
+    font-weight: 700;
+    font-size: 18px;
+
+    li {
+      margin-right: 20px;
+
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.main-head {
+  background: url(../img/fon-contact.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 170px 0;
+}
+
+#encabezado {
+  div p {
+    width: 50%;
+    color: #280400;
+    font-weight: bolder;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+
+  a {
+    text-decoration: none;
+    color: #280400;
+    border: 1px solid #280400;
+    padding: 20px 40px 20px 40px;
+  }
+}
+
+#contact .izquierda a {
+  text-decoration: none;
+  color: #280400;
+  border: 1px solid #280400;
+  padding: 20px 40px 20px 40px;
+}
+
+#encabezado a:hover,
+#contact .izquierda a:hover {
+  background: #280400;
+  color: #fff;
+  transition: 0.4s;
+}
+
+.about img:hover {
+  transform: scale(1.1);
+}
+
+.contenedor h1 {
+  font-size: 80px;
+  font-family: "lora";
+  color: #280400;
+  margin-bottom: 0;
+}
+
+/* ---- INDEX ABOUT---- */
+
+.about {
+  > div h2 {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.733);
+    color: #280400;
+    width: 100%;
+  }
+
+  img {
+    margin-top: 20px;
+    width: 60%;
+    margin-left: 40px;
+    transition: 0.5s;
+  }
+
+  p {
+    color: #666;
+  }
+}
+
+/* ----CONTACTOS---- */
+
+#contact {
+  display: flex;
+  justify-content: space-evenly;
+  background: url(../img/contacto.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 80px 0;
+
+  .izquierda {
+    width: 40%;
+  }
+
+  h2 {
+    font-size: 80px;
+    font-family: "lora";
+    color: #280400;
+    margin-bottom: 0;
+    margin-bottom: 70px;
+  }
+
+  .izquierda p {
+    font-size: 14px;
+    color: #666;
+    margin-top: 40px;
+  }
+
+  .derecha {
+    background: #280400;
+    color: #fff;
+    padding: 70px 30px;
+  }
+}
+
+.datos {
+  font-size: 13px;
+}
+
+.derecha {
+  h3 {
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  a {
+    color: #fff;
+    border: 1px solid rgba(232, 226, 215, 0.2);
+    text-decoration: none;
+    padding: 15px 30px;
+
+    &:hover {
+      border-color: rgb(255, 255, 255);
+      color: white;
+      transition: 0.4s;
+    }
+  }
+}
+
+/* ---VINOS ---*/
+
+.cont {
+  max-width: 495px;
+}
+
+.bg-tilcara {
+  background-image: url(../img/winery-68.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bg-purma {
+  background-image: url(../img/winery-42.jpg);
+  @extend .bg-tilcara;
+}
+
+.bg-maimara {
+  background-image: url(../img/winery-46.jpg);
+  @extend .bg-tilcara;
+}
+
+.head-vino {
+  position: static;
+}
+
+.sz {
+  color: #280400;
+  font-family: "Lora", Georgia, "Times New Roman", serif;
+  max-width: 461px !important;
+  margin-top: 100px !important;
+
+  h2 {
+    text-align: center;
+  }
+}
+
+.sz p{
+  margin: 100px 0 117px 0;
+  width: 600px;
+  text-align: justify;
+}
+
+.carousel-inner div {
+  p {
+    position: absolute !important;
+    bottom: 2% !important;
+    width: 88.1% !important;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: rgba(102, 102, 102, 0.556) !important;
+    text-align: center;
+
+    a {
+      text-decoration: none;
+      color: #280400;
+    }
+  }
+
+  img {
+    box-shadow: 10px 10px 12px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 12px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 12px 0px rgba(0, 0, 0, 0.75);
+  }
+}
+
+.container-fluid p {
+  text-shadow: #222;
+  text-shadow: red;
+  text-align: justify;
+}
+
+/* ----CONTACTS-PAGE---- */
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor-contacts {
+  h1 {
+    padding-bottom: 10px;
+    line-height: 1em;
+    font-weight: 500;
+    font-size: 110px;
+    color: #280400;
+    font-family: "Lora", Georgia, "Times New Roman", serif;
+    margin-left: 100px;
+  }
+
+  p {
+    width: 50%;
+    color: #666;
+    margin-bottom: 30px;
+    margin-left: 100px;
+  }
+}
+
+#button {
+  text-align-last: center;
+}
+
+textarea {
+  border: none;
+  border-bottom: 2px solid #280400;
+  outline: none;
+  font-size: 16px;
+  line-height: 1.4em;
+  margin-top: 50px;
+}
+
+input {
+  outline: none;
+}
+
+section form ul li input {
+  border: none;
+  border-bottom: 2px solid #280400;
+  font-size: 16px;
+  line-height: 1.4em;
+  margin-right: 20px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #280400;
+  font-family: "Poppins";
+}
+
+#button input {
+  padding: 10px;
+  border-radius: 50%;
+  margin-top: 30px;
+}
+
+ul label {
+  display: none;
+}
+
+#button input:hover {
+  background: #280400;
+  color: #fff;
+  transition: 0.4s;
+}
+
+/* ----SUSTENTABILIDAD-PAGE---- */
+
+.over{
+  overflow: hidden;
+}
+
+.contenedor-landing {
+  h1 {
+    font-size: 100px;
+    font-family: "lora" !important;
+    color: #280400 !important;
+    margin-bottom: 0 !important;
+  }
+
+  p {
+    width: 50%;
+    color: #666;
+    margin-bottom: 50px;
+    margin-top: 80px;
+  }
+
+  max-width: 1280px;
+  width: 90%;
+  margin: auto;
+}
+
+.img-size {
+  position: absolute;
+}
+
+.div-sz {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 110px;
+  margin-left: 1180px;
+}
+
+.eco {
+  color: #20f50f;
+  text-shadow: #2f752a 1px 2px 3px;
+  font-size: medium;
+  margin-left: 5px;
+}
+
+.susten-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 3fr;
+  grid-area: "area1  area2   area3";
+  gap: 20px;
+
+  h2 {
+    font-size: 1.3rem;
+    font-weight: 900;
+  }
+
+  p {
+    font-size: 0.9em;
+  }
+}
+
+/* ----ABOUT-PAGE---- */
+
+.contenedor-about {
+  margin-bottom: 15px;
+  justify-content: center;
+}
+
+.titulo-about {
+  margin-top: 100px;
+  padding-bottom: 10px;
+  line-height: 1em;
+  font-weight: 500;
+  font-size: 80px;
+  color: #280400;
+  font-family: "Lora", Georgia, "Times New Roman", serif;
+  margin-left: 100px;
+}
+
+.encabezado-contenedor {
+  background-image: linear-gradient(
+      90deg,
+      rgba(248, 245, 241, 0) 33%,
+      rgba(248, 245, 241, 0.79) 100%
+    ),
+    url(../img/winery-68.jpg);
+  padding: 100px;
+  margin-top: 180px;
+  margin-left: 10%;
+  max-width: 900px;
+  text-align: right;
+}
+
+.subtitulo {
+  color: #280400;
+  font-family: "Lora", Georgia, "Times New Roman", serif;
+  font-size: 60px;
+  line-height: 1.2em;
+}
+
+.mk-wine {
+  color: #280400;
+  font-family: "Lora", Georgia, "Times New Roman", serif;
+  font-size: 60px;
+  line-height: 1.2em;
+  margin-left: 138px;
+}
+
+.para-about {
+  margin-left: 138px;
+}
+
+iframe {
+  margin-top: 50px;
+}
+
+.sz-about {
+  width: 300px;
+}
+
+.margen {
+  margin-right: 80px;
+  margin-top: 15px;
+}
+
+.marg-img img {
+  width: auto;
+  height: 355px;
+  margin-left: 80px;
+}
+
+.marg-col-2 {
+  margin-top: 15px;
+}
+
+/* ----FOOTER---- */
+
+#main-footer {
+  background-color: #222;
+  text-align: center;
+  margin-top: 30px;
+}
+
+#footer-bottom {
+  padding: 15px 0 5px;
+}
+
+.footer-info {
+  color: white;
+}
+
+.redes-sociales {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-left: 0 !important;
+
+  li {
+    margin-left: 20px;
+  }
+
+  a span {
+    text-decoration: none;
+  }
+}
+
+.icono {
+  font-size: 1.5rem;
+}
+
+.ico {
+  border-radius: 50%;
+}
+
+/* media-queries */
+
+@media screen and (max-width: 1000px) {
+  .izquierda h2 {
+    font-size: 60px !important;
+  }
+
+  .derecha {
+    width: 200px;
+    height: auto;
+    padding: 40px 30px !important;
+    margin-top: 40px;
+
+    h3 {
+      font-size: 20px;
+    }
+
+    a {
+      font-size: 10px;
+      padding: 5px;
+    }
+  }
+}
+
+@media screen and (max-width: 682px) {
+  .h1-sz {
+    font-size: 5rem !important;
+    margin-top: 15px;
+  }
+
+  #contact {
+    padding: 0 0;
+  }
+
+  .izquierda {
+    h2 {
+      font-size: 40px !important;
+      margin-top: 30px;
+    }
+
+    a {
+      margin-top: 0;
+      font-size: 13px !important;
+      padding: 3px 5px !important;
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .h1-sz {
+    font-size: 3.5rem !important;
+    margin-top: 15px;
+  }
+
+  .susten {
+    p {
+      font-size: 10px;
+    }
+
+    h2 {
+      font-size: 12px;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .h1-sz {
+    font-size: 2.5rem !important;
+    margin-top: 20px;
+  }
+
+  .contenedor-landing p {
+    width: 400px;
+    font-size: 12px;
+  }
+}

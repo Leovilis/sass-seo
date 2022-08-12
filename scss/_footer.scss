@@ -1,0 +1,43 @@
+/* ----FOOTER---- */
+  
+#main-footer {
+    background-color: #222;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  #footer-bottom {
+    padding: 15px 0 5px;
+  }
+  
+  .footer-info {
+    color: white;
+  }
+  
+  .redes-sociales {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  
+    
+  
+    li {
+      margin-left: 20px;
+    }
+  
+    a span {
+      text-decoration: none;
+    }
+  }
+  
+  .icono {
+    font-size: 3rem;
+  }
+  
+  .ico-color {
+    color: #f515db;
+  }
+  
+  .ico {
+    border-radius: 50%;
+  }
