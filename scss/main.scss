@@ -287,9 +287,6 @@ form {
   }
 }
 
-#button {
-  text-align-last: center;
-}
 
 textarea {
   border: none;
@@ -318,11 +315,12 @@ textarea::placeholder {
   font-family: "Poppins";
 }
 
-#button input {
-  padding: 10px;
-  border-radius: 50%;
-  margin-top: 30px;
-}
+
+// #button input {
+//   padding: 10px;
+//   border-radius: 50%;
+//   margin-top: 30px;
+// }
 
 ul label {
   display: none;

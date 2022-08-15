@@ -37,6 +37,24 @@
 .ico-color-instagram {
   color: #ff048e; }
 
+/* ---Boton-Contacts-Page--- */
+.bton {
+  appearance: none;
+  border: none;
+  background: #fff;
+  font-size: 18px;
+  color: #280400;
+  text-align-last: center; }
+
+.bton input {
+  padding: 10px;
+  margin-top: 30px; }
+
+.bton input:hover {
+  background: #280400;
+  color: #fff;
+  transition: 0.4s; }
+
 * {
   padding: 0;
   margin: 0;
@@ -249,9 +267,6 @@ form {
   margin-bottom: 30px;
   margin-left: 100px; }
 
-#button {
-  text-align-last: center; }
-
 textarea {
   border: none;
   border-bottom: 2px solid #280400;
@@ -274,11 +289,6 @@ input::placeholder,
 textarea::placeholder {
   color: #280400;
   font-family: "Poppins"; }
-
-#button input {
-  padding: 10px;
-  border-radius: 50%;
-  margin-top: 30px; }
 
 ul label {
   display: none; }
