@@ -190,9 +190,14 @@ header {
 /* ---VINOS ---*/
 
 .cont {
-  max-width: 495px;
+  max-width: 470px;
+  margin-top: 10px;
 }
-
+.pg-pips {
+  ul {
+    margin-right: 10px;
+  }
+}
 .bg-tilcara {
   background-image: url(../img/winery-68.jpg);
   background-size: cover;
@@ -225,7 +230,7 @@ header {
   }
 }
 
-.sz p{
+.sz p {
   margin: 100px 0 117px 0;
   width: 600px;
   text-align: justify;
@@ -234,8 +239,8 @@ header {
 .carousel-inner div {
   p {
     position: absolute !important;
-    bottom: 2% !important;
-    width: 88.1% !important;
+    bottom: -3% !important;
+    width: 100% !important;
     font-size: 15px;
     font-weight: bold;
     background-color: rgba(102, 102, 102, 0.556) !important;
@@ -287,7 +292,6 @@ form {
   }
 }
 
-
 textarea {
   border: none;
   border-bottom: 2px solid #280400;
@@ -315,7 +319,6 @@ textarea::placeholder {
   font-family: "Poppins";
 }
 
-
 // #button input {
 //   padding: 10px;
 //   border-radius: 50%;
@@ -334,7 +337,7 @@ ul label {
 
 /* ----SUSTENTABILIDAD-PAGE---- */
 
-.over{
+.over {
   overflow: hidden;
 }
 
@@ -446,7 +449,12 @@ ul label {
 .para-about {
   margin-left: 138px;
 }
-
+.col {
+  p:nth-child(2n + 1) {
+    margin-right: 30px;
+    margin-top: 80px !important;
+  }
+}
 iframe {
   margin-top: 50px;
 }
@@ -531,9 +539,155 @@ iframe {
       padding: 5px;
     }
   }
+
+  //ESTILOS PAGINA ABOUT
+
+  .para-about {
+    width: 200px !important;
+  }
+  .video {
+    width: auto;
+    margin-top: 232px;
+  }
+
+  // ESTILOS PAGINA VINOS
+
+  #carrusel,
+  .cont {
+    width: 430px !important;
+    margin-top: 10px !important;
+  }
+
+  .carousel-inner {
+    div {
+      p {
+        width: 100% !important;
+        bottom: -3.5% !important;
+      }
+    }
+  }
+  .sz {
+    font-size: 15px !important;
+    p {
+      font-size: 20px;
+      width: 590px !important;
+    }
+  }
+  #footer-bottom {
+    margin-top: 260px !important;
+  }
+  //ESTILOS PAGINA CONTACTS
+  .h1-sz {
+    font-size: 70px !important;
+    margin-top: 30px;
+  }
+
+  .contenedor-contacts {
+    p {
+      font-size: 20px;
+      width: 370px;
+      margin-top: 40px;
+    }
+  }
+
+  .form {
+    .inp {
+      width: 280px !important;
+    }
+    .mensaje {
+      width: 590px !important;
+    }
+    .bton {
+      input {
+        margin-top: 50px;
+      }
+    }
+  }
+  #main-footer {
+    margin-top: 50px;
+  }
+  //ESTILOS LANDING PAGE
+  .over {
+    .news {
+      img {
+        display: none;
+      }
+    }
+  }
 }
 
-@media screen and (max-width: 682px) {
+@media screen and (max-width: 766px) {
+  //ESTILOS ABOUT PAGE
+  .titulo-about {
+    font-size: 60px;
+    margin-top: 30px;
+  }
+  .encabezado-contenedor {
+    max-width: 690px;
+    margin-left: 3%;
+    margin-top: 140px;
+  }
+  .susten {
+    img {
+      height: 350px !important;
+      margin-left: 7px !important;
+    }
+  }
+  .para-about {
+    font-size: 0.8rem !important;
+    margin-left: 1px !important;
+    margin-right: -40px !important;
+  }
+  .mk-wine {
+    font-size: 50px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    display: ruby-text;
+  }
+
+  .sz-about {
+    width: 450px !important;
+    margin-left: 160px !important;
+  }
+  .video {
+    margin-left: 124px;
+    margin-top: 50px;
+    width: 512px;
+  }
+
+  // ESTILOS PAGINA VINOS
+  #carrusel,
+  .cont {
+    width: 430px !important;
+    margin-top: 10px !important;
+  }
+  #page-4 {
+    .p-3 {
+      padding-top: 1rem !important;
+    }
+  }
+
+  .carousel-inner {
+    div {
+      p {
+        width: 100% !important;
+        bottom: -3.5% !important;
+      }
+    }
+  }
+  .sz {
+    font-size: 15px !important;
+    p {
+      margin: 50px 10px 0 10px !important;
+      width: 450px !important;
+    }
+  }
+  #footer-bottom {
+    margin-top: 85px;
+  }
+}
+
+@media screen and (max-width: 640px) {
   .h1-sz {
     font-size: 5rem !important;
     margin-top: 15px;
@@ -555,21 +709,241 @@ iframe {
       padding: 3px 5px !important;
     }
   }
-}
 
-@media screen and (max-width: 550px) {
-  .h1-sz {
-    font-size: 3.5rem !important;
-    margin-top: 15px;
+  //ESTILOS ABOUT PAGE
+  .titulo-about {
+    font-size: 50px;
+    margin-top: 38px;
+  }
+  .encabezado-contenedor {
+    max-width: 690px;
+    margin-left: 3%;
+    margin-top: 140px;
+    p {
+      font-size: 28px;
+    }
+  }
+  .subtitulo {
+    font-size: 43px;
   }
 
-  .susten {
+  .para-about {
+    font-size: 0.65rem !important;
+    margin-left: 40px !important;
+    margin-right: -40px !important;
+    width: 120px !important;
+  }
+  .mk-wine {
+    font-size: 40px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    display: ruby-text;
+  }
+
+  .sz-about {
+    width: 380px !important;
+    margin-left: 140px !important;
+  }
+  .video {
+    margin-left: 131px;
+    margin-top: 50px;
+    width: 380px;
+  }
+  // ESTILOS PAGINA VINOS
+  #carrusel,
+  .cont {
+    width: 430px !important;
+    margin-top: 10px !important;
+  }
+  #page-4 {
+    .p-3 {
+      padding-top: 1rem !important;
+    }
+  }
+
+  .carousel-inner {
+    div {
+      p {
+        width: 100% !important;
+        bottom: -3.5% !important;
+      }
+    }
+  }
+  .sz {
+    font-size: 15px !important;
     p {
-      font-size: 10px;
+      margin: 50px 10px 0 10px !important;
+      width: 450px !important;
+    }
+  }
+  #footer-bottom {
+    margin-top: 85px;
+  }
+  //ESTILOS PAGINA CONTACTS
+  .h1-sz {
+    font-size: 60px !important;
+    margin-top: 25px;
+  }
+
+  .contenedor-contacts {
+    p {
+      font-size: 16px;
+      width: 370px;
+      margin-top: 40px;
+    }
+  }
+
+  .form {
+    .inp {
+      width: 230px !important;
+    }
+    .mensaje {
+      width: 490px !important;
+    }
+    .bton {
+      input {
+        margin-top: 50px;
+      }
+    }
+  }
+  #main-footer {
+    margin-top: 46px;
+  }
+  //ESTILOS LANDING PAGE
+  .section-main {
+    div {
+      h1 {
+        font-size: 40px !important;
+        margin-left: 50px;
+      }
+      p {
+        width: 90% !important;
+        margin-left: 10px !important;
+        font-size: 13px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 550px) {
+    //ESTILOS INDEX PAGE
+    .main-head {
+      padding-bottom: 80px;
+      padding-top: 45px;
+    }
+    .contenedor {
+      margin-left: 85px;
+      width: 300px;
+      h1 {
+        font-size: 65px;
+      }
+      p {
+        width: 70% !important;
+        font-size: 12px;
+        margin-top: 30px;
+      }
+    }
+    .row {
+      img {
+        display: none !important;
+      }
     }
 
-    h2 {
-      font-size: 12px;
+    .container {
+      h2 {
+        font-size: 20px;
+        height: 28px;
+      }
+      p {
+        font-size: 10px;
+      }
+    }
+    //ESTILOS CONTACTS PAGE
+    // .h1-sz {
+    //   font-size: 3.5rem !important;
+    //   margin-top: 15px;
+    // }
+
+    //ESTILOS ABOUT PAGE
+    .section-main {
+      margin-bottom: 10px;
+    }
+    .titulo-about {
+      font-size: 37px;
+      margin-top: 55px;
+    }
+    .encabezado-contenedor {
+      background-image: none;
+      margin-top: -73px;
+      padding: 85px 0 0 0;
+      margin-left: 50px;
+      p {
+        margin-top: 0;
+        font-size: 15px;
+      }
+      h2 {
+        font-size: 32px;
+      }
+    }
+    .col {
+      img {
+        margin-top: 60px;
+      }
+    }
+    .col {
+      p:nth-child(2n + 1) {
+        font-size: 10px;
+        margin-left: 10px !important;
+        margin-top: 10px !important;
+      }
+      p {
+        margin-left: 45px !important;
+      }
+
+      h2 {
+        font-size: 25px;
+      }
+    }
+    .video {
+      margin-left: 45px;
+      margin-top: 50px;
+      width: 380px;
+    }
+ 
+    //ESTILOS PAGINA CONTACTS
+    .h1-sz {
+      font-size: 45px !important;
+      margin-top: 50px;
+    }
+
+    .contenedor-contacts {
+      p {
+        font-size: 13px;
+        width: 300px;
+        margin-top: 40px;
+      }
+    }
+  }
+  .form {
+    .inp {
+      width: 200px !important;
+    }
+    .mensaje {
+      width: 430px !important;
+    }
+    .bton {
+      input {
+        margin-top: 50px;
+      }
+    }
+  }
+  #main-footer {
+    margin-top: 10px;
+  }
+  .section-main {
+    p {
+      margin-left: 20px;
+      margin-bottom: 10px;
+      width: 300px !important;
     }
   }
 }
@@ -583,5 +957,193 @@ iframe {
   .contenedor-landing p {
     width: 400px;
     font-size: 12px;
+  }
+
+  .par {
+    font-size: 1rem !important;
+    width: 250px !important;
+  }
+  .btn-wine {
+    padding: 15px 30px 15px 30px !important ;
+  }
+  #scene {
+    display: none;
+  }
+  .sub-wine {
+    background-color: rgba(72, 72, 72, 0.542) !important;
+    font-size: 25px;
+    font-weight: bolder;
+    color: #390a05;
+  }
+  .about img:hover {
+    transform: none !important;
+  }
+  .about img {
+    margin-left: 95px !important;
+    margin-bottom: 30px !important;
+  }
+
+  .derecha {
+    width: auto;
+    margin-top: 70px;
+    padding: 15px 10px 15px 10px !important;
+    background-color: hsla(6, 100%, 8%, 0.722) !important;
+    h3 {
+      font-size: 15px;
+    }
+  }
+  .izquierda {
+    h2 {
+      font-size: 25px !important;
+      margin-top: 130px;
+    }
+  }
+  .datos {
+    font-size: 10px;
+  }
+  // ESTILOS PAGINA VINOS
+  #carrusel {
+    width: 390px;
+    margin: 35px;
+  }
+
+  .sz {
+    font-size: 15px !important;
+    p {
+      margin: 50px 10px 0 10px !important;
+      width: 400px !important;
+    }
+  }
+  #footer-bottom {
+    margin-top: 85px;
+  }
+  //ESTILOS PAGINA CONTACTS
+  .h1-sz {
+    font-size: 30px !important;
+    margin-top: 50px;
+  }
+
+  .contenedor-contacts {
+    p {
+      font-size: 13px;
+      width: 300px;
+      margin-top: 40px;
+    }
+  }
+
+  .form {
+    .inp {
+      width: 100px !important;
+    }
+    .mensaje {
+      width: 230px !important;
+    }
+  }
+  //ESTILOS LANDING PAGE
+  .section-main {
+    .h1-sz {
+      font-size: 50px !important;
+      margin-left: 30px;
+    }
+    p {
+      margin-left: 25px;
+      margin-bottom: 10px;
+      width: 350px !important;
+    }
+  }
+
+  .susten-grid {
+    h2 {
+      font-size: 17px !important;
+    }
+    p {
+      font-size: 15px;
+    }
+  }
+}
+@media screen and (max-width: 405px) {
+  //ESTILOS WINE PAGE
+  #carrusel {
+    width: 325px !important;
+    margin-top: 110px !important;
+    margin-left: 35px !important;
+  }
+
+  .pg-page {
+    p {
+      font-size: 13px !important;
+      margin-top: 50px !important;
+      margin-left: 50px !important;
+      width: 250px !important;
+    }
+  }
+  #footer-bottom {
+    margin-top: 280px !important;
+    height: 125px !important;
+  }
+
+  //ESTILOS LANDING PAGE
+  .section-main {
+    .h1-sz {
+      font-size: 40px !important;
+      margin-left: 60px;
+    }
+    p {
+      margin-left: 20px;
+      margin-bottom: 10px;
+      width: 300px !important;
+    }
+  }
+  .susten-grid {
+    h2 {
+      font-size: 10px !important;
+    }
+    p {
+      font-size: 10px;
+    }
+  }
+  #footer-bottom {
+    margin-top: 1px !important;
+  }
+
+  //ESTILOS ABOUT PAGE
+
+  .section-main {
+    div {
+      h1 {
+        font-size: 30px !important;
+        margin-left: 90px !important;
+      }
+    }
+  }
+  .encabezado-contenedor {
+    p {
+      margin-top: 0;
+      font-size: 12px;
+    }
+    h2 {
+      font-size: 30px;
+      margin-right: 30px;
+    }
+  }
+  .col {
+    p:nth-child(2n + 1) {
+      margin-right: 43px !important;
+      margin-left: -25px !important;
+    }
+    .sz-about {
+      margin-left: 25px !important;
+      width: 300px !important;
+    }
+
+    h2 {
+      font-size: 20px;
+      margin-left: 90px;
+    }
+  }
+  .video {
+    margin-left: 30px;
+    margin-top: 30px;
+    width: 300px;
   }
 }
